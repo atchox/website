@@ -12,17 +12,17 @@
 
   /* Colors */
   /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
-  --color-primary-50: oklch(0.971 0.014 343.198);
-  --color-primary-100: oklch(0.948 0.028 342.258);
-  --color-primary-200: oklch(0.899 0.061 343.231);
-  --color-primary-300: oklch(0.823 0.12 346.018);
-  --color-primary-400: oklch(0.718 0.202 349.761);
-  --color-primary-500: oklch(0.656 0.241 354.308);
-  --color-primary-600: oklch(0.592 0.249 0.584);
-  --color-primary-700: oklch(0.525 0.223 3.958);
-  --color-primary-800: oklch(0.459 0.187 3.815);
-  --color-primary-900: oklch(0.408 0.153 2.432);
-  --color-primary-950: oklch(0.284 0.109 3.907);
+  --color-primary-50: oklch(0.971 0.013 17.38);
+  --color-primary-100: oklch(0.936 0.032 17.717);
+  --color-primary-200: oklch(0.885 0.062 18.334);
+  --color-primary-300: oklch(0.808 0.114 19.571);
+  --color-primary-400: oklch(0.704 0.191 22.216);
+  --color-primary-500: oklch(0.637 0.237 25.331);
+  --color-primary-600: oklch(0.577 0.245 27.325);
+  --color-primary-700: oklch(0.505 0.213 27.518);
+  --color-primary-800: oklch(0.444 0.177 26.899);
+  --color-primary-900: oklch(0.396 0.141 25.723);
+  --color-primary-950: oklch(0.258 0.092 26.042);
 
   --color-gray-50: oklch(0.985 0.002 247.839);
   --color-gray-100: oklch(0.967 0.003 264.542);
@@ -81,9 +81,10 @@
 @layer utilities {
   .prose {
     & a {
-      color: var(--color-primary-500);
+      color: var(--color-gray-500);
+      font-weight: 700;
       &:hover {
-        color: var(--color-primary-600);
+        color: var(--color-gray-600);
       }
       & code {
         color: var(--color-primary-400);
@@ -172,4 +173,23 @@ input:-webkit-autofill:focus {
 .linkicon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.keep-reading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 115%;
+  left: 0;
+  pointer-events: none;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.keep-reading:hover::after {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
 }
