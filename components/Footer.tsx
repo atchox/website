@@ -13,8 +13,7 @@ export default function Footer() {
     axios
       .get('/music/random')
       .then((data) => {
-        data = data.data
-        setTrack(data)
+        setTrack(data.data)
       })
       .catch((error) => console.error(error))
   }, [])
@@ -24,7 +23,8 @@ export default function Footer() {
       <div className="mt-16 mb-4 flex flex-col items-center">
         {track ? (
           <iframe
-            className="h-20 w-4/5 rounded-xl sm:w-2/5"
+            title="spotify-soul"
+            className="h-20 w-3/5 rounded-xl sm:w-2/5 md:w-3/12"
             src={`https://open.spotify.com/embed/track/${track}?utm_source=generator`}
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowFullScreen
