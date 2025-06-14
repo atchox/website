@@ -25,12 +25,22 @@ const data = {
     [
       '2024 - Present',
       'Research Assistant, Robinson Lab, Department of Molecular Life Sciences, UZH',
-      'I am primarily supervised by Dr. Izaskun Mallona. I build performant tools in C++ for high throughput analysis of DNA methylation data computing different types of heterogeneity within and across sequences. Currently, I am involved in the application of these tools in simulated and real datasets for the purpose of benchmarking and extracting meaningful biological insights.',
+      <>
+        I am primarily supervised by Dr. Izaskun Mallona. I build and package performant tools in
+        C++ for high throughput analysis of DNA methylation data computing different types of
+        heterogeneity within and across sequences. Currently, I am involved in the application of
+        these tools in simulated and real datasets for the purpose of benchmarking and extracting
+        meaningful biological insights.
+        <br />
+        <Link href="https://github.com/imallona/yamet">
+          imallona/<b>yamet</b>
+        </Link>
+      </>,
     ],
     [
       '2025',
       'Semester Paper, Seminar for Statistics, ETHZ',
-      'The paper was written under the advisement of Dr. Markus Kalisch.\n',
+      'The paper was written under the advisement of Dr. Markus Kalisch.\nIt is a study on intraclass correlation coefficients (ICC) as a measure of reliability. We study the theoretical foundations of different ICCs and some applications in real datasets.',
     ],
     [
       '2024',
@@ -186,9 +196,20 @@ const data = {
     ],
   ],
   'Software Skills': [
-    ['Languages', 'C, C++, Python, JavaScript, R, LaTeX'],
+    ['Languages', 'C, C++, R, Python, JavaScript, TypeScript, Bash, LaTeX'],
     ['Databases', 'MongoDB, MySQL'],
-    ['Others', 'CMake, CPack, ReactJS, NodeJS, ExpressJS, HTML, CSS, Django'],
+    [
+      'UI & Web',
+      `ReactJS, NextJS, ExpressJS, HTML5, CSS3, Tailwind CSS, Material UI, Django, Directus`,
+    ],
+    [
+      'R Packages',
+      'BiocParallel, bookdown, ComplexHeatmap, edgeR, extraDistr, ggplot2, infotheo, lmerTest, markovchain, mgcv, parallel, Rcpp, readxl, rmarkdown, scMET, sechm, SummarizedExperiment, tximport',
+    ],
+    [
+      'Others',
+      'CMake, CPack, NodeJS, Docker, Snakemake, quarto, brew, ansible, conda, pyenv, uv, git',
+    ],
   ],
   Languages: [
     ['English', 'Native or Bilingual Proficiency'],
