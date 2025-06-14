@@ -114,7 +114,7 @@ export default function Message() {
         <button
           type="submit"
           disabled={!name || !email || !message || loading}
-          className={`inline-flex items-center rounded-md px-4 py-2 text-white transition disabled:cursor-not-allowed disabled:bg-gray-500 ${
+          className={`inline-flex items-center rounded-md px-4 py-2 text-white transition disabled:cursor-not-allowed disabled:bg-gray-400 dark:text-gray-300 disabled:dark:bg-gray-500 ${
             loading ? 'cursor-not-allowed bg-gray-400' : 'bg-emerald-800 hover:bg-emerald-900'
           }`}
         >
