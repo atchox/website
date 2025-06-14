@@ -204,7 +204,7 @@ const data = {
     ],
     [
       'R Packages',
-      'BiocParallel, bookdown, ComplexHeatmap, edgeR, extraDistr, ggplot2, infotheo, lmerTest, markovchain, mgcv, parallel, Rcpp, readxl, rmarkdown, scMET, sechm, SummarizedExperiment, tximport',
+      'BiocParallel, bookdown, ComplexHeatmap, devtools, edgeR, extraDistr, ggplot2, infotheo, irr, kableExtra, lmerTest, markovchain, mgcv, parallel, Rcpp, readxl, rmarkdown, scMET, sechm, SummarizedExperiment, tximport',
     ],
     [
       'Others',
