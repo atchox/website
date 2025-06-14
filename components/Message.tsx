@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, FormEvent, ChangeEvent } from 'react'
+import { useState, useEffect, FormEvent, ChangeEvent, HTMLAttributes } from 'react'
 import axios from '@/data/axiosSetup'
 
 type AlertType = {
@@ -8,7 +8,11 @@ type AlertType = {
   type: 'success' | 'error'
 }
 
-export default function Message() {
+type MessageProps = {
+  className?: string
+} & HTMLAttributes<HTMLDivElement>
+
+export default function Message({ className = '', ...props }: MessageProps) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -66,7 +70,7 @@ export default function Message() {
   }
 
   return (
-    <div className="w-full max-w-3xl">
+    <div className={`w-full ${className}`} {...props}>
       <form onSubmit={submit} className="space-y-4">
         <div className="flex flex-col gap-4 sm:flex-row">
           <div className="w-full">
