@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'atchox',
   description: 'Personal website of Atreya Choudhury',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://www.atchox.com',
   siteRepo: 'https://github.com/atchox/new-website',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
