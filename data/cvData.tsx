@@ -14,11 +14,6 @@ const data = {
   'Research Experience': [
     [
       '2025 - Present',
-      'Masters Thesis, Seminar for Statistics, ETHZ',
-      'I am supervised by Prof. Dr. Fadoua Balabdaoui. I am currently studying single index models under a convexity constraint',
-    ],
-    [
-      '2025 - Present',
       'Collaborator',
       'I am collaborating with Camilla Beccarini and Dr. Hendrik Wildner from the Zeilhofer group at the Institute of Pharmacology and Toxicology, UZH. I analyse TRAP-seq data from spinal neurons and astrocytes in mice. Our work focuses on identifying sex-specific translatome changes following peripheral nerve injury.',
     ],
