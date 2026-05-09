@@ -12,6 +12,7 @@ import {
   Medium,
   Bluesky,
   Letterboxd,
+  Orcid,
 } from './icons'
 
 const components = {
@@ -28,6 +29,7 @@ const components = {
   medium: Medium,
   bluesky: Bluesky,
   letterboxd: Letterboxd,
+  orcid: Orcid,
 }
 
 type SocialIconProps = {

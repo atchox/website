@@ -19,6 +19,7 @@ const siteMetadata = {
   // youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/atreyachoudhury',
   letterboxd: 'https://letterboxd.com/atchox/',
+  orcid: 'https://orcid.org/0009-0003-4975-0515',
   // threads: 'https://www.threads.net',
   // instagram: 'https://www.instagram.com',
   // medium: 'https://medium.com',
